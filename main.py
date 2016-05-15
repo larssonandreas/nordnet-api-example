@@ -7,8 +7,8 @@ import time
 import json
 
 """
-Read credentials form file since credentials and configuration should allways be keept separate from application logic
-and can vary depending on running the code in dev, test or prod envoiroment and for security reasons sensitive
+Read credentials form file since credentials and configuration should always be kept separate from application logic
+and can vary depending on running the code in dev, test or prod environment and for security reasons sensitive
 information like API keys should not be checked into source control.
 """
 print("Reading credentials from file...")
@@ -60,8 +60,8 @@ print("Raw cipher encryption: \n {enc}\n"
       )
 
 """
-The code below initiates a login request passing the encoded login credentials as params and upon succesfully connection
-it will receive a session key(and some other data as well) to be used by subseqent calls.
+The code below initiates a login request passing the encoded login credentials as params and upon successfully connection
+it will receive a session key (and some other data as well) to be used by subsequent calls.
 """
 print("Making login request with params...")
 headers = {'Accept': 'application/json'}
@@ -81,10 +81,10 @@ print(json.dumps(json_data,
 
 """
 The code below retrieves account information from the account associated with the provided credentials in order to
-verify that the connection was successfully established and the sessionkey is valid.
+verify that the connection was successfully established and the session key is valid.
 
 Send sessionkey:sessionkey as base64 encoded basic auth with all calls after login call in order to execute API calls
-over REST
+over REST.
 """
 session_key = json_data['session_key'] + ':' + json_data['session_key']
 b64_auth = base64.b64encode(bytes(session_key, encoding='utf-8')).decode("utf-8")

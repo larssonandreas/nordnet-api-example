@@ -3,25 +3,25 @@ Example client for connecting to the Nordnet API using Python 3.5 with the Crypt
 PublicKey encryption modules. The client is intended for demo and educational purposes but could be altered to
 be used for other purposes if needed.
 
-Comments has been added in order to give breif guidance on what each section of the code does, however it is not
-inteneded to be a "learn-to-program"-tutorial and prior coding experience is adviced.
+Comments has been added in order to give brief guidance on what each section of the code does, however it is not
+intended to be a "learn-to-program"-tutorial and prior coding experience is advised.
 
-The example code has (**on purpose**) been keept simple and scaled down in order to keep it to the bare essentiasl and
+The example code has (**on purpose**) been kept simple and scaled down in order to keep it to the bare essentials and
 therefor it **DOES NOT** include any **exception/error handling** or logging.
 
 # Up and running
 The following steps needs to be completed in order to get the integration up and running.
 * Step 1: Getting a developer account
- * Step 2: Install code dependencies and run the provided code
+* Step 2: Install code dependencies and run the provided code
 
 ### Setting up the required accounts
-Register an account with the Nordnet API developer programme to setup a username and password to be used with the code.
+Register an account with the Nordnet API developer program to setup a username and password to be used with the code.
 https://api.test.nordnet.se/
 
 ### Installation
 ```
 1. Download the example code
-2. Add your credentials to the crednetials.json file
+2. Add your credentials to the credentials.json file
 3. run main.py
 ```
 
@@ -32,8 +32,8 @@ python main.py
 ```
 
 # Troubleshooting
-The Crypto package has known troubles when running on python 3.5 when it comes to finiding the right internal modules.
-If the pycrypto is installed using pip the package Crypto can on some ocasions yeild an error like "missing pacakge" or
+The Crypto package has known troubles when running on python 3.5 when it comes to finding the right internal modules.
+If the pycrypto is installed using pip the package Crypto can on some occasions yield an error like "missing package" or
 similar.
 ```
 ImportError: No module named Crypto.Cipher'
